@@ -28,6 +28,9 @@ gem 'jbuilder', '~> 2.7'
 # For users authentication
 gem 'devise'
 
+# For CI
+gem 'circleci'
+
 # For pagination
 gem 'will_paginate'
 

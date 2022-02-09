@@ -5,4 +5,8 @@ class Lender < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :borrowers, dependent: :destroy
+  validates :email, presence: true
+  validates :name, presence: true
+  validates :last_name, presence: true
+
 end
