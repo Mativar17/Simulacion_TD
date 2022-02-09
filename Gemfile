@@ -28,6 +28,12 @@ gem 'jbuilder', '~> 2.7'
 # For users authentication
 gem 'devise'
 
+# For CI
+gem 'circleci'
+
+# For pagination
+gem 'will_paginate'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 

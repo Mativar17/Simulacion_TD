@@ -24,8 +24,8 @@ default: &default
 development:
   <<: *default
   database: simulacion_development
-  user: postgres
-  password: hola123A
+  user: <%= ENV['SIMULACION_APP_DATABASE_DEV_USER'] %>
+  password: <%= ENV['SIMULACION_APP_DATABASE_DEV_PASSWORD'] %>
   host: localhost
   port: 5433
 
@@ -62,8 +62,8 @@ development:
 test:
   <<: *default
   database: simulacion_test
-  user: postgres
-  password: hola123A
+  user: <%= ENV['SIMULACION_APP_DATABASE_DEV_USER'] %>
+  password: <%= ENV['SIMULACION_APP_DATABASE_DEV_PASSWORD'] %>
   host: localhost
   port: 5433
 
